@@ -23,20 +23,17 @@ module AD_fre(
     reg [9:0] max,min;
     wire [9:0] zero;
 
-    always@(posedge clk)
-    begin
-        if(!rst_n)begin
-        max=10'd100;
-        min=10'd100;
-       end
-    end
     always@(posedge clk_div10)
     begin
-       if(AD_in > max)
+        if(!rst_n)begin
+            max=10'd100;
+            min=10'd100;
+        end
+        else if(AD_in > max)
             max <= AD_in;
-       else if(AD_in < min) 
+        else if(AD_in < min) 
             min <= AD_in;
-         end
+        end
 
     assign zero = (max+min)/2;
 
