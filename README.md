@@ -101,9 +101,9 @@
 |meta_harden.v| 异步信号转同步信号 |
 |reset_bridge.v| 产生同步复位信号 |
 |rst_gen.v| 蓝牙串口复位信号产生模块|
-|uart_baud_gen.v| 波特率产生模块 |
-|uart_rx.v| 接收端顶层模块 |
-|uart_rx_ctl.v| 接收端控制模块 |
+|uart_baud_gen.v| 串口波特率产生模块 |
+|uart_rx.v| 串口接收端顶层模块 |
+|uart_rx_ctl.v| 串口接收端控制模块 |
 |pwm.v| 呼吸灯模块 |
 |AM_create.v| 产生AM调制波模块 |
 |cos_make.v| AM载波产生模块 |
