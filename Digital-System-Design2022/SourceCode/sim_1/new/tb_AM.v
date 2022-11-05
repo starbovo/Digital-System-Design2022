@@ -6,7 +6,7 @@ module tb_AM();
 //---------接口设置----------//
 reg 	sclk;
 reg		rst_n;
-wire 	signed	[15:0]	AM_mod;
+wire 	signed	[13:0]	AM_mod;
 //--------------------------//
 initial		sclk = 1;
 always	#5	sclk = ~sclk;		//100M时钟
